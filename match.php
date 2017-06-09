@@ -105,7 +105,21 @@ $db->EXECUTE("set names 'utf8'");
 // Phytotaxa
 // Stud. Mycol.
 // Mycol. Res.
-$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="Mycol. Res." and doi is NULL';
+// Lichenologist
+
+$title = 'Lichenologist';
+$title = 'Cryptog. Mycol.';
+$title = 'Mycotaxon';
+
+
+$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" and doi is NULL';
+
+$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE issn="0031-5850" and doi is NULL';
+
+$sql .= ' and year = 2015';
+//$sql .= ' and volume = 109';
+
+//echo $sql . "\n";
 
 $include_issue_in_search = false;
 $include_authors_in_search = false;
