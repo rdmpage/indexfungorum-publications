@@ -110,13 +110,25 @@ $db->EXECUTE("set names 'utf8'");
 $title = 'Lichenologist';
 $title = 'Cryptog. Mycol.';
 $title = 'Mycotaxon';
+$title = 'Kew Bull.';
+$title = 'Harvard Pap. Bot.';
+$title = 'Taiwania';
+$title = 'Polish Bot. J.';
+$title = 'Lichenologist';
+$title = 'IMA Fungus';
+$title = 'Bull. Soc. bot. Fr.';
+$title = 'Bull. Jard. bot. État Brux.';
+$title = 'Acta bot. Yunn.';
+$title = 'Telopea';
 
+$title = 'Schlechtendalia';
+$title = 'Sydowia';
 
 $sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" and doi is NULL';
 
-$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE issn="0031-5850" and doi is NULL';
+//$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE issn="0031-5850" and doi is NULL';
 
-$sql .= ' and year = 2015';
+//$sql .= ' and year = 2014';
 //$sql .= ' and volume = 109';
 
 //echo $sql . "\n";

@@ -14,6 +14,8 @@ $db->Connect("localhost",
 // Ensure fields are (only) indexed by column name
 $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 
+$db->EXECUTE("set names_indexfungorum 'utf8'"); 
+
 
 //--------------------------------------------------------------------------------------------------
 function default_display()
@@ -192,7 +194,7 @@ function display_query($sql)
 		
 		$record->html .= ' ' . utf8_encode($result->fields['authorship']);
 		
-		$record->publication = '<a href="?p=' . trim(utf8_encode($result->fields['title'])) . '">' . str_replace(' ', '&nbsp;', trim(utf8_encode($result->fields['title']))) . '</a> ' 
+		$record->publication = '<a href="?p=' . $result->fields['title'] . '">' . utf8_encode($result->fields['title']) . '</a> ' 
 			. trim(utf8_encode($result->fields['volume']));
 			
 		if ($result->fields['number'] != '')
@@ -205,7 +207,7 @@ function display_query($sql)
 		
 		// identifiers
 		
-		$identifiers = array('issn', 'doi', 'jstor', 'biostor', 'bhl', 'cinii', 'url', 'pdf', 'handle', 'isbn');
+		$identifiers = array('issn', 'doi', 'jstor', 'biostor', 'bhl', 'cinii', 'url', 'pdf', 'handle', 'isbn', 'oclc');
 		foreach ($identifiers as $i)
 		{
 			if ($result->fields[$i] != '')
@@ -388,6 +390,7 @@ function display_query($sql)
 	echo '<th>URL</th>';
 	echo '<th>PDF</th>';
 	echo '<th>ISBN</th>';
+	echo '<th>OCLC</th>';
 	
 	echo '</tr>';
 	echo '</thead>';
@@ -411,6 +414,7 @@ function display_query($sql)
 		if (isset($sp->url)) $haslink = true;
 		if (isset($sp->pdf)) $haslink = true;
 		if (isset($sp->isbn)) $haslink = true;
+		if (isset($sp->oclc)) $haslink = true;
 		
 	
 		
@@ -545,6 +549,15 @@ function display_query($sql)
 		{
 			//echo '<a href="' . $sp->pdf . '" title="' . $sp->pdf . '">';
 			echo $sp->isbn;
+			//echo '</a>';
+		}		
+		echo '</td>';
+
+		echo '<td>';
+		if (isset($sp->oclc))
+		{
+			//echo '<a href="' . $sp->pdf . '" title="' . $sp->pdf . '">';
+			echo $sp->oclc;
 			//echo '</a>';
 		}		
 		echo '</td>';
