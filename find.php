@@ -214,15 +214,42 @@ $journals=array(
 //'Systematics and Geography of Plants'
 //'Plant Ecology and Evolution'
 //'FEMS Microbiol. Lett.'
-'Reproduction, Nutrition, Développement'
+//'Reproduction, Nutrition, Développement'
+//'International Journal of Medicinal Mushrooms (Redding)'
+//'Turkish Journal of Botany'
+//'J. Eukary. Microbiol.'
+//'J. Invert. Path.'
+//'Diagn. Microbiol. Infect. Dis.'
+//'Eur. J. Protist.'
+//'Revta Iberoamer. Micol.'
+//'Evansia'
+//'Mycobiology'
+//'MycoKeys'
+//'Field Mycology'
+//'Syst. Bot.'
+//'Tropical Plant Pathology'
+//'Ukr. Bot. J.'
+//'Scottish Journal of Geology'
+//'Agriculture & Forestry'
+//'Anais Acad. Brasil. Ciênc.'
+//'Antarctic Science'
+//'Australas. Pl. Path.'
+//'Current Research in Environmental & Applied Mycology'
+//'Eur. J. Pl. Path.'
+//'J. Threatened Taxa'
+//'Syst. Biodiv.'
+//'Bull. mens. Soc. linn. Lyon'
+
+// to do
+'Ann. bot. fenn.'
 );
 
 
 foreach ($journals as $journal)
 {
 	$sql = 'select * from names_indexfungorum where title = "' . $journal .'" and doi is NULL';	
-	//$sql .= ' AND year = 2013 and pages=333';
-	$sql .= ' AND year';
+	//$sql .= ' AND year = 2013';
+	//$sql .= ' AND year';
 	
 	
 	//$sql = 'select * from names_indexfungorum where id=131467';
