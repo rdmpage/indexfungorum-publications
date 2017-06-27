@@ -205,6 +205,8 @@ function display_query($sql)
 		$record->publication .= ': ' . trim(utf8_encode($result->fields['pages']));
 		$record->publication .= ' ' . $result->fields['year'];
 		
+		$record->pages = $result->fields['pages'];
+		
 		// identifiers
 		
 		$identifiers = array('issn', 'doi', 'jstor', 'biostor', 'bhl', 'cinii', 'url', 'pdf', 'handle', 'isbn', 'oclc');
@@ -214,6 +216,12 @@ function display_query($sql)
 			{
 				$record->{$i} = $result->fields[$i];
 			}
+		}
+		
+		// comments
+		if ($result->fields['rdmp_comment'] != '')
+		{
+			$record->comment .= '(' . $result->fields['rdmp_comment'] . ')';
 		}
 		
 		
@@ -354,6 +362,24 @@ function display_query($sql)
 				);	
 			}
 			
+			function show_pdf(pdf, page)
+			{
+				$("#details").html("");
+				$.getJSON("/~rpage/microcitation/www/pdfpage.php?pdf=" + pdf + "&page=" + page,
+					function(data){
+						var html = "";
+						
+						if (data.image) {
+							html = "<img src=\"" + data.image + "\" width=\"500\" />";
+						} else {
+							html = "PDF \"" + pdf + "\" and page \"" + page + "\" not found";
+						}
+						$("#details").html(html);
+					}
+					
+				);	
+			}
+						
 			
 			
 		</script>
@@ -391,6 +417,7 @@ function display_query($sql)
 	echo '<th>PDF</th>';
 	echo '<th>ISBN</th>';
 	echo '<th>OCLC</th>';
+	echo '<th>Comment</th>';
 	
 	echo '</tr>';
 	echo '</thead>';
@@ -431,23 +458,29 @@ function display_query($sql)
 		}
 		*/
 		
-		if ($haslink)
+		if (isset($sp->comment))
 		{
-			if (isset($sp->doi))
-			{
-				echo ' style="background-color:#00FF80;"';
-			}
-			else
-			{
-				echo ' style="background-color:#FFFF66;"';
-			}
-			
+			echo ' style="background-color:red;color:white;"';
 		}
 		else
 		{
-			echo ' style="background-color:#fff;"';
-		}
-		
+			if ($haslink)
+			{
+				if (isset($sp->doi))
+				{
+					echo ' style="background-color:#00FF80;"';
+				}
+				else
+				{
+					echo ' style="background-color:#FFFF66;"';
+				}
+			
+			}
+			else
+			{
+				echo ' style="background-color:#fff;"';
+			}
+		}		
 		
 		
 		echo '>';
@@ -536,7 +569,10 @@ function display_query($sql)
 		echo '<td>';
 		if (isset($sp->pdf))
 		{
-			echo '<span onclick="show_url(\'' . urlencode($sp->pdf) . '\');">';
+			//echo '<span onclick="show_url(\'' . urlencode($sp->pdf) . '\');">';
+			
+			echo '<span onclick="show_pdf(\'' . $sp->pdf . '\',\'' . $sp->pages . '\');">';
+			
 			//echo '<a href="' . $sp->pdf . '" title="' . $sp->pdf . '">';
 			echo substr($sp->pdf, 7, 20) . '...';
 			//echo '</a>';
@@ -559,6 +595,13 @@ function display_query($sql)
 			//echo '<a href="' . $sp->pdf . '" title="' . $sp->pdf . '">';
 			echo $sp->oclc;
 			//echo '</a>';
+		}		
+		echo '</td>';
+
+		echo '<td>';
+		if (isset($sp->comment))
+		{
+			echo $sp->comment;
 		}		
 		echo '</td>';
 		
