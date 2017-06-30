@@ -52,7 +52,7 @@ Some articles have mEDRA DOIs, such as _Sydowia_, e.g. http://dx.doi.org/10.1290
 If we add new records and need to add ISSNs to those records, then:
 
 ```
-SELECT DISTINCT CONCAT("UPDATE names_indexfungorum SET issn='", issn, " WHERE title='", title, "';") FROM `names_indexfungorum` WHERE issn IS NOT NULL;
+SELECT DISTINCT CONCAT("UPDATE names_indexfungorum SET issn='", issn, “’ WHERE title='", title, "';") FROM `names_indexfungorum` WHERE issn IS NOT NULL;
 ```
 
 ## Plans

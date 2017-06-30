@@ -244,12 +244,104 @@ $journals=array(
 'Ann. bot. fenn.'
 );
 
+$journals = array(
+/*'J. gen. appl. Microbiol., Tokyo',
+'Trans. Br. mycol. Soc.',
+'FEMS Yeast Res.',
+'PLoS ONE',
+'N.Z. Jl Bot.',
+'Mycol. Res.',
+'Botany',
+'Aust. J. Bot.',
+'Bryologist',
+'Polish Bot. J.',
+'Norw. Jl Bot.',
+'Feddes Repert. Spec. Nov., Beih.',
+'Stud. Mycol.',
+'Phyotaxa',
+'Lichenologist',
+'Mycokeys',
+'Stud. Mycol.',
+'J. Linn. Soc., Bot.',
+'Fungal Diversity',
+'S. Afr. J. Bot.',
+'Feddes Repert.',
+'IMA Fungus',
+'Trans. Roy. Soc. South Africa',
+'Nova Hedwigia',
+'Phytopathology',
+'Castanea',
+'Edinb. J. Bot.',
+'Aust. Syst. Bot.',
+'Am. Midl. Nat.',
+'Archives of Phytopathology and Plant Protection',
+'Bull. Jard. bot. Etat Brux.',
+'Stud. Mycol.',
+'Int. J. Syst. Bacteriol.',
+'Syst. Appl. Microbiol.',
+'Archives of Phytopathology and Plant Protection',
+'Brittonia',
+'Ann. Mo. bot. Gdn',
+'Can. J. Microbiol.',
+'Fungal Biology',
+'Cryptog. Mycol.',
+'Organ. Divers. Evol.',
+'Persoonia, Mol. Phyl. Evol. Fungi',
+'Telopea',
+'Phytotaxa',
+'Acta bot. hung.',
+'Bothalia',
+'Candollea',
+'J. Torrey bot. Soc.',
+'Mol. Phylogen. Evol.',
+'New Phytol.',
+'Mycopathologia',
+'Mycotaxon',*/
+'Mycosphere',
+'Telopea',
+'Taxon',
+'Phytopath. Mediterr.',
+'Bot. Mag., Tokyo',
+'Nordic Jl Bot.',
+'Systematics and Geography of Plants',
+'Plant Ecology and Evolution',
+'FEMS Microbiol. Lett.',
+'Reproduction, Nutrition, Développement',
+'International Journal of Medicinal Mushrooms (Redding)',
+'Turkish Journal of Botany',
+'J. Eukary. Microbiol.',
+'J. Invert. Path.',
+'Diagn. Microbiol. Infect. Dis.',
+'Eur. J. Protist.',
+'Revta Iberoamer. Micol.',
+'Evansia',
+'Mycobiology',
+'MycoKeys',
+'Field Mycology',
+'Syst. Bot.',
+'Tropical Plant Pathology',
+'Ukr. Bot. J.',
+'Scottish Journal of Geology',
+'Agriculture & Forestry',
+'Anais Acad. Brasil. Ciênc.',
+'Antarctic Science',
+'Australas. Pl. Path.',
+'Current Research in Environmental & Applied Mycology',
+'Eur. J. Pl. Path.',
+'J. Threatened Taxa',
+'Syst. Biodiv.',
+'Bull. mens. Soc. linn. Lyon'
+);
+
+
+$journals = array('Review of Palaeobotany and Palynology (Amsterdam)');
+
 
 foreach ($journals as $journal)
 {
 	$sql = 'select * from names_indexfungorum where title = "' . $journal .'" and doi is NULL';	
 	//$sql .= ' AND year = 2013';
-	//$sql .= ' AND year';
+	//$sql .= ' AND id < 100000';
 	
 	
 	//$sql = 'select * from names_indexfungorum where id=131467';

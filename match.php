@@ -129,19 +129,21 @@ $title = 'Bull. Torrey bot. Club';
 $title = 'Willdenowia';
 $title = 'Opuscula Philolichenum';
 $title = 'Mem. Torrey bot. Club';
+$title = 'Ann. bot. fenn.';
 
-$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" and doi is NULL';
+$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" AND doi IS NULL';
+
 
 //$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE issn="0031-5850" and doi is NULL';
 
 //$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE id=333515'; 
 
-//$sql .= ' and year = 2014';
+$sql .= ' and year = 2007';
 //$sql .= ' and volume = 109';
 
 //echo $sql . "\n";
 
-$include_issue_in_search = true;
+$include_issue_in_search = false;
 $include_authors_in_search = false;
 
 $result = $db->Execute($sql);
