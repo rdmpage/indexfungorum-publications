@@ -34,41 +34,7 @@
 			   return results[1] || 0;
 			}
 		}    	
-	
-	var name1 = {
-   "_id": "urn:lsid:ipni.org:names:50426094-2",
-   "_rev": "1-26f74457feaf7d54e49cf6511ff61d58",
-   "message-timestamp": "2017-06-29T10:18:39+00:00",
-   "message-modified": "2017-06-29T10:18:39+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:50426094-2",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:50426094-2",
-       "html": "<i>Afrothismia</i> <i>gesnerioides</i> H.Maas, 2003",
-       "scientificNameID": "urn:lsid:ipni.org:names:50426094-2",
-       "version": "1.1.2.1",
-       "scientificName": "Afrothismia gesnerioides",
-       "scientificNameAuthorship": "H.Maas",
-       "genus": "Afrothismia",
-       "specificEpithet": "gesnerioides",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Burmanniaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Blumea",
-       "namePublishedIn": "Blumea, 48(3): 477 (2003), 2003",
-       "namePublishedInYear": "2003",
-       "issn": "0006-5196",
-       "doi": "10.3767/000651903x489429",
-       "namePublishedInID": "doi:10.3767/000651903x489429",
-       "url": "http://www.repository.naturalis.nl/record/524920",
-       "pdf": "http://www.repository.naturalis.nl/document/565339",
-       "timestamp": 1489496399
-   }
-};
-	
-	
+
 	</script>
 	
 	<script>
@@ -235,6 +201,7 @@
 			
 			function search(q) {
 				$("#hits").html("");
+				$("#hits").html("Searching...");
 				$.getJSON("api.php?q=" + encodeURIComponent(q) + "&callback=?",
 					function(data){
 					
@@ -273,6 +240,8 @@
 	
 						if (data.hits[i].message.doi) {
 							html += '<div><span onclick="show_crossref(\'' + data.hits[i].message.doi + '\')">' + data.hits[i].message.doi + '</span>'
+							//html += '<div><span onclick="show_work(\'' + data.hits[i].message.doi + '\')">' + data.hits[i].message.doi + '</span>'
+						
 						}
 
 						if (data.hits[i].message.url) {
@@ -285,6 +254,10 @@
 
 						if (data.hits[i].message.biostor) {
 							html += '<div><span style="word-break:break-all;" onclick="show_biostor(' + data.hits[i].message.biostor + ')">http://biostor.org/reference/' + data.hits[i].message.biostor + '</span>'
+						}
+
+						if (data.hits[i].message.pdf) {
+							html += '<div><span style="word-break:break-all;" onclick="show_work(\'' + data.hits[i].message.pdf + '\')">' + data.hits[i].message.pdf + '</span>'
 						}
 	
 	
@@ -314,427 +287,108 @@
 	
 	</script>
 	
+	<style>
+	
+	/*
+		CSS based on https://webdesign.tutsplus.com/tutorials/how-to-make-responsive-scrollable-panels-with-flexbox--cms-23269
+	     and https://benfrain.com/independent-scrolling-panels-body-scroll-using-just-css/ 
+*/
+	
+html, body {
+  height: 100%;
+  padding:0px;
+  margin:0px;
+}
+
+body {
+	overflow-x:hidden;
+}
+
+ 
+.wrap {
+  height: 90vh;
+  display: flex;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+ 
+aside, article {
+  overflow-y: scroll;
+  padding: 2em;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+article {
+  flex: 2;
+  border:1px solid rgb(242,242,242);
+}
+
+#top {
+	height: 10vh;
+  display: flex;
+   
+    background-color: darkgreen;
+   
+    
+}
+
+input, button {
+ font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+}
+	
+	</style>
 	
 </head>
 <body>
 
-<div style="position:relative;width:100%">
 
-	<!-- search box along top -->
-	<div style="width:100%;height:40px;border:1px solid rgb(242,242,242);">Search
+<div id="top" style="width:100%;height:40px;border:1px solid rgb(242,242,242);">
 	
 		<input type="text" id="query" value="Afrothismia" placeholder=""Afrothismia">
 		<button id="find" onclick="find();">Search</button>	
 	
-	</div>
-	
-	<!-- hits and drill down -->
-	<div style="width:100%;border:1px solid rgb(242,242,242);">Results</div>
+	</div> 
 
-		<!-- list of hits -->
-		<div id="hits" style="background-color:white;width:440px;height:600px;overflow-y:scroll;overflow-x: hidden;">
-
-<!-- 
-			<div style="position:absolute;left:0px;top:0px;width:400px;border:1px solid rgb(242,242,242);">
-			<h2><i>Afrothismia</i> <i>gesnerioides</i> H.Maas, 2003</h2>
-			<div>urn:lsid:ipni.org:names:50426094-2</div>
-			<div>Blumea, 48(3): 477 (2003), 2003</div>
-			<div>10.3767/000651903x489429</div>
-			</div>
-	
-			<div style="position:absolute;left:0px;top:120px;width:400px;border:1px solid rgb(242,242,242);">
-			<h2><i>Afrothismia</i> <i>gesnerioides</i> H.Maas, 2003</h2>
-			<div>urn:lsid:ipni.org:names:50426094-2</div>
-			<div>Blumea, 48(3): 477 (2003), 2003</div>
-			<div><span onclick="show_crossref('10.3767/000651903x489429')">10.3767/000651903x489429</span></div>
-			</div> -->
-
-		</div>
-
-		<!-- <div style="clear:both;"></div> -->
-
-		<!-- detail/drill down -->
-		<div id="details" style="position:absolute;top:60px;left:450px;width:600px;border:1px solid rgb(242,242,242);overflow-y:scroll;overflow-x: hidden;height:600px;padding:10px;">
-		</div>
-		
-	</div>
-
+<div class="wrap">
+ 
+  <main>
+ 
+    <aside id="hits">
+      <h1>Sidebar</h1>
+      <p>
+        lipsum...
+      </p>
+    </aside>
+ 
+    <article id="details">
+      <h1>Content</h1>
+      <p>
+        lipsum...
+      </p>
+    </article>
+ 
+  </main>
+ 
 </div>
+
 
 
 
 <script>
 
 // show results
-
-var hits = [
-{
-   "_id": "urn:lsid:ipni.org:names:77102806-1",
-   "_rev": "1-c0eec6426fb361792e0c6f0b1d6b5955",
-   "message-timestamp": "2017-06-29T20:34:39+00:00",
-   "message-modified": "2017-06-29T20:34:39+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:77102806-1",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:77102806-1",
-       "html": "<i>Rafflesia</i> <i>aurantia</i> Barcelona, Co & Balete, 2009 [Oct 2009]",
-       "scientificNameID": "urn:lsid:ipni.org:names:77102806-1",
-       "version": "1.1",
-       "scientificName": "Rafflesia aurantia",
-       "scientificNameAuthorship": "Barcelona, Co & Balete",
-       "genus": "Rafflesia",
-       "specificEpithet": "aurantia",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Rafflesiaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Gard. Bull. Singapore",
-       "namePublishedIn": "Gard. Bull. Singapore, 61(1): 18 (17-27; figs. 1-3), 2009 [Oct 2009]",
-       "namePublishedInYear": "2009 [Oct 2009]",
-       "issn": "0374-7859",
-       "biostor": "146700",
-       "namePublishedInID": "http://biostor.org/reference/146700",
-       "timestamp": 1489530810
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:50426094-2",
-   "_rev": "1-26f74457feaf7d54e49cf6511ff61d58",
-   "message-timestamp": "2017-06-29T10:18:39+00:00",
-   "message-modified": "2017-06-29T10:18:39+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:50426094-2",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:50426094-2",
-       "html": "<i>Afrothismia</i> <i>gesnerioides</i> H.Maas, 2003",
-       "scientificNameID": "urn:lsid:ipni.org:names:50426094-2",
-       "version": "1.1.2.1",
-       "scientificName": "Afrothismia gesnerioides",
-       "scientificNameAuthorship": "H.Maas",
-       "genus": "Afrothismia",
-       "specificEpithet": "gesnerioides",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Burmanniaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Blumea",
-       "namePublishedIn": "Blumea, 48(3): 477 (2003), 2003",
-       "namePublishedInYear": "2003",
-       "issn": "0006-5196",
-       "doi": "10.3767/000651903x489429",
-       "namePublishedInID": "doi:10.3767/000651903x489429",
-       "url": "http://www.repository.naturalis.nl/record/524920",
-       "pdf": "http://www.repository.naturalis.nl/document/565339",
-       "timestamp": 1489496399
-   }
-},
-{
-   "_id": "urn:lsid:indexfungorum.org:names:513110",
-   "_rev": "1-99a1192324836ac32a9a4cdea3d3a90d",
-   "message-timestamp": "2017-06-29T10:08:34+00:00",
-   "message-modified": "2017-06-29T10:08:34+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:indexfungorum.org:names:513110",
-       "cluster_id": "urn:lsid:indexfungorum.org:names:513110",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "scientificNameID": "urn:lsid:indexfungorum.org:names:513110",
-       "scientificName": "Minimelanolocus magnoliae",
-       "scientificNameAuthorship": "K. Zhang & X.G. Zhang",
-       "verbatimTaxonRank": "sp.",
-       "html": "<i>Minimelanolocus</i> <i>magnoliae</i> K. Zhang & X.G. Zhang, 2009",
-       "genus": "Minimelanolocus",
-       "specificEpithet": "magnoliae",
-       "kingdom": "Fungi",
-       "nomenclaturalCode": "ICBN",
-       "source": "Mycotaxon",
-       "microreference": "96",
-       "namePublishedIn": "Mycotaxon, 109, 96, 2009",
-       "namePublishedInYear": "2009",
-       "issn": "0093-4666",
-       "doi": "10.5248/109.95",
-       "namePublishedInID": "doi:10.5248/109.95",
-       "url": "http://www.ingentaconnect.com/content/mtax/mt/2009/00000109/00000001/art00013"
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:50426094-2",
-   "_rev": "1-26f74457feaf7d54e49cf6511ff61d58",
-   "message-timestamp": "2017-06-29T10:18:39+00:00",
-   "message-modified": "2017-06-29T10:18:39+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:50426094-2",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:50426094-2",
-       "html": "<i>Afrothismia</i> <i>gesnerioides</i> H.Maas, 2003",
-       "scientificNameID": "urn:lsid:ipni.org:names:50426094-2",
-       "version": "1.1.2.1",
-       "scientificName": "Afrothismia gesnerioides",
-       "scientificNameAuthorship": "H.Maas",
-       "genus": "Afrothismia",
-       "specificEpithet": "gesnerioides",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Burmanniaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Blumea",
-       "namePublishedIn": "Blumea, 48(3): 477 (2003), 2003",
-       "namePublishedInYear": "2003",
-       "issn": "0006-5196",
-       "doi": "10.3767/000651903x489429",
-       "namePublishedInID": "doi:10.3767/000651903x489429",
-       "url": "http://www.repository.naturalis.nl/record/524920",
-       "pdf": "http://www.repository.naturalis.nl/document/565339",
-       "timestamp": 1489496399
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:77060247-1",
-   "_rev": "1-bcae9a1aba99f6166656d503f2bd0ef9",
-   "message-timestamp": "2017-06-29T10:18:39+00:00",
-   "message-modified": "2017-06-29T10:18:39+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:77060247-1",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:77060247-1",
-       "html": "<i>Afrothismia</i> <i>saingei</i> T.Franke, 2004",
-       "scientificNameID": "urn:lsid:ipni.org:names:77060247-1",
-       "version": "1.2.2.1",
-       "scientificName": "Afrothismia saingei",
-       "scientificNameAuthorship": "T.Franke",
-       "genus": "Afrothismia",
-       "specificEpithet": "saingei",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Burmanniaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Syst. & Geogr. Pl.",
-       "namePublishedIn": "Syst. & Geogr. Pl., 74(1): 28 (27-33; figs.), 2004",
-       "namePublishedInYear": "2004",
-       "issn": "1374-7886",
-       "jstor": "3668554",
-       "namePublishedInID": "http://www.jstor.org/stable/3668554",
-       "timestamp": 1489496399
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:1007000-1",
-   "_rev": "1-1f71b8cc8438dad5fb533d93fd304284",
-   "message-timestamp": "2017-06-29T20:07:21+00:00",
-   "message-modified": "2017-06-29T20:07:21+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:1007000-1",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:1007000-1",
-       "html": "<i>Begonia</i> <i>lancangensis</i> S.H.Huang, 1999",
-       "scientificNameID": "urn:lsid:ipni.org:names:1007000-1",
-       "version": "1.4",
-       "scientificName": "Begonia lancangensis",
-       "scientificNameAuthorship": "S.H.Huang",
-       "genus": "Begonia",
-       "specificEpithet": "lancangensis",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Begoniaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Acta Bot. Yunnan.",
-       "namePublishedIn": "Acta Bot. Yunnan., 21(1): 13, 1999",
-       "namePublishedInYear": "1999",
-       "issn": "0253-2700",
-       "doi": "10.3969/j.issn.2095-0845.1999.01.002",
-       "namePublishedInID": "doi:10.3969/j.issn.2095-0845.1999.01.002",
-       "url": "http://med.wanfangdata.com.cn/Paper/Detail?id=PeriodicalPaper_ynzwyj199901002",
-       "pdf": "http://journal.kib.ac.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=902",
-       "timestamp": 1492495155
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:50425702-2",
-   "_rev": "1-de9289377ce849a8238db24ff0a7838f",
-   "message-timestamp": "2017-06-29T20:10:18+00:00",
-   "message-modified": "2017-06-29T20:10:18+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:50425702-2",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:50425702-2",
-       "html": "<i>Bhutanthera</i> <i>humidicola</i> (K.Y.Lang & D.S.Deng) Ormerod, 2003",
-       "scientificNameID": "urn:lsid:ipni.org:names:50425702-2",
-       "version": "1.1",
-       "originalNameUsage": "Orchidaceae Peristylus humidicola K.Y.Lang & D.S.Deng",
-       "scientificName": "Bhutanthera humidicola",
-       "scientificNameAuthorship": "(K.Y.Lang & D.S.Deng) Ormerod",
-       "genus": "Bhutanthera",
-       "specificEpithet": "humidicola",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Orchidaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Taiwania",
-       "namePublishedIn": "Taiwania, 48(3): 139 (2003), 2003",
-       "namePublishedInYear": "2003",
-       "issn": "0372-333X",
-       "doi": "10.6165/tai.2003.48(3).139",
-       "namePublishedInID": "doi:10.6165/tai.2003.48(3).139",
-       "url": "http://www.airitilibrary.com/Publication/Index?FirstID=0372333X-200309-201211300021-201211300021-139-146",
-       "timestamp": 1489513749
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:121461-2",
-   "_rev": "1-8a3a47fd09a1f66669bc2fcca80ea2ed",
-   "message-timestamp": "2017-06-29T20:14:19+00:00",
-   "message-modified": "2017-06-29T20:14:19+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:121461-2",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:214068-1",
-       "html": "<i>Heterotheca</i> <i>martirensis</i> Moran, 1969",
-       "scientificNameID": "urn:lsid:ipni.org:names:121461-2",
-       "version": "1.3",
-       "scientificName": "Heterotheca martirensis",
-       "scientificNameAuthorship": "Moran",
-       "genus": "Heterotheca",
-       "specificEpithet": "martirensis",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Asteraceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Trans. San Diego Soc. Nat. Hist.",
-       "namePublishedIn": "Trans. San Diego Soc. Nat. Hist., 15: 289 [-291], f. 10, 1969",
-       "namePublishedInYear": "1969",
-       "issn": "0080-5947",
-       "biostor": "176557",
-       "namePublishedInID": "http://biostor.org/reference/176557",
-       "taxonRemarks": "([Gandhi; Semple, Univ. Waterloo Biol. Ser. 37: 64. 1996])",
-       "timestamp": 1489522985
-   }
-},
-{
-   "_id": "urn:lsid:ipni.org:names:77131502-1",
-   "_rev": "1-baca39134a2da756c081cf1bc1ebce68",
-   "message-timestamp": "2017-06-29T20:23:28+00:00",
-   "message-modified": "2017-06-29T20:23:28+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:ipni.org:names:77131502-1",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "cluster_id": "urn:lsid:ipni.org:names:77131502-1",
-       "html": "<i>Boesenbergia</i> <i>aurantiaca</i> R.M.Sm., 2013",
-       "scientificNameID": "urn:lsid:ipni.org:names:77131502-1",
-       "version": "1.1",
-       "scientificName": "Boesenbergia aurantiaca",
-       "scientificNameAuthorship": "R.M.Sm.",
-       "genus": "Boesenbergia",
-       "specificEpithet": "aurantiaca",
-       "verbatimTaxonRank": "spec.",
-       "kingdom": "Plantae",
-       "family": "Zingiberaceae",
-       "nomenclaturalCode": "ICBN",
-       "source": "Gard. Bull. Singapore",
-       "namePublishedIn": "Gard. Bull. Singapore, 65(1): 99, 2013",
-       "namePublishedInYear": "2013",
-       "issn": "0374-7859",
-       "biostor": "146649",
-       "namePublishedInID": "http://biostor.org/reference/146649",
-       "timestamp": 1489513938
-   }
-},
-{
-   "_id": "urn:lsid:indexfungorum.org:names:812809",
-   "_rev": "1-a9ce3a0f7cf0717326b258ea28f5a96c",
-   "message-timestamp": "2017-06-29T20:26:30+00:00",
-   "message-modified": "2017-06-29T20:26:30+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:indexfungorum.org:names:812809",
-       "cluster_id": "urn:lsid:indexfungorum.org:names:812809",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "scientificNameID": "urn:lsid:indexfungorum.org:names:812809",
-       "originalNameUsageID": "urn:lsid:indexfungorum.org:names:509761",
-       "scientificName": "Paramycosphaerella nabiacense",
-       "scientificNameAuthorship": "(Crous & Carnegie) Guatimosim, R.W. Barreto & Crous",
-       "verbatimTaxonRank": "sp.",
-       "html": "<i>Paramycosphaerella</i> <i>nabiacense</i> (Crous & Carnegie) Guatimosim, R.W. Barreto & Crous, 2016",
-       "genus": "Paramycosphaerella",
-       "specificEpithet": "nabiacense",
-       "kingdom": "Fungi",
-       "nomenclaturalCode": "ICBN",
-       "source": "Persoonia, Mol. Phyl. Evol. Fungi",
-       "microreference": "127",
-       "namePublishedIn": "Persoonia, Mol. Phyl. Evol. Fungi, 37, 127, 2016",
-       "namePublishedInYear": "2016",
-       "issn": "0031-5850",
-       "doi": "10.3767/003158516x690934",
-       "namePublishedInID": "doi:10.3767/003158516x690934"
-   }
-},
-{
-   "_id": "urn:lsid:indexfungorum.org:names:550939",
-   "_rev": "1-d96188ebce83a468181a514c7609f162",
-   "message-timestamp": "2017-06-29T20:28:25+00:00",
-   "message-modified": "2017-06-29T20:28:25+00:00",
-   "message-format": "text/csv",
-   "message": {
-       "id": "urn:lsid:indexfungorum.org:names:550939",
-       "cluster_id": "urn:lsid:indexfungorum.org:names:550939",
-       "type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-       "scientificNameID": "urn:lsid:indexfungorum.org:names:550939",
-       "scientificName": "Myrothecium macrosporum",
-       "scientificNameAuthorship": "D.Q. Dai & K.D. Hyde",
-       "verbatimTaxonRank": "sp.",
-       "html": "<i>Myrothecium</i> <i>macrosporum</i> D.Q. Dai & K.D. Hyde, 2015",
-       "genus": "Myrothecium",
-       "specificEpithet": "macrosporum",
-       "kingdom": "Fungi",
-       "nomenclaturalCode": "ICBN",
-       "source": "Fungal Diversity",
-       "namePublishedIn": "Fungal Diversity, 10.1007/s13225-015-0324-y, [33], 2015",
-       "namePublishedInYear": "2015",
-       "issn": "1560-2745",
-       "doi": "10.1007/s13225-015-0324-y",
-       "namePublishedInID": "doi:10.1007/s13225-015-0324-y"
-   }
-}
-];
-
-/*
-var html = '';
-for (var i in hits) {
-	
-	html += '<div style="float:left;width:400px;border:1px solid rgb(242,242,242);">';
-	html += '<h2>' + hits[i].message.html + '</h2>';
-	html += '<div>' + hits[i].message.id + '</div>';
-	html += '<div>' + hits[i].message.namePublishedIn + '</div>';
-	
-	if (hits[i].message.doi) {
-		html += '<div><span onclick="show_crossref(\'' + hits[i].message.doi + '\')">' + hits[i].message.doi + '</span>'
-	}
-
-	if (hits[i].message.url) {
-		html += '<div><span style="word-break:break-all;" onclick="show_work(\'' + hits[i].message.url + '\')">' + hits[i].message.url + '</span>'
-	}
-
-	if (hits[i].message.jstor) {
-		html += '<div><span style="word-break:break-all;" onclick="show_work(\'http://www.jstor.org/stable/' + hits[i].message.jstor + '\')">http://www.jstor.org/stable/' + hits[i].message.jstor + '</span>'
-	}
-
-	if (hits[i].message.biostor) {
-		html += '<div><span style="word-break:break-all;" onclick="show_biostor(' + hits[i].message.biostor + ')">http://biostor.org/reference/' + hits[i].message.biostor + '</span>'
-	}
-			
-	html += '</div>';
-}
-
-$('#hits').html(html);	
-
-*/
 
 search('Afrothismia');
 
