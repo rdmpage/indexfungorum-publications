@@ -155,7 +155,7 @@ function csl_to_jats(doc) {
 	*/
 
 	
-	// OCR scans 
+	// OCR scans (BHL)
 	if (doc.message.bhl_pages) {
 		xw.writeStartElement('body');
 			xw.writeStartElement('supplementary-material');
@@ -171,6 +171,24 @@ function csl_to_jats(doc) {
 			xw.writeEndElement();
 		xw.writeEndElement();
 	}
+
+	// PDF 
+	if (doc.message.pdf_pages) {
+		xw.writeStartElement('body');
+			xw.writeStartElement('supplementary-material');
+			xw.writeAttributeString('content-type', 'scanned-pages');
+	
+			for (var i in doc.message.pdf_pages) {
+				xw.writeStartElement('graphic');
+				xw.writeAttributeString('xlink:href', doc.message.pdf_pages[i]);
+				xw.writeAttributeString('xlink:role', i);
+				xw.writeAttributeString('xlink:title', i);
+				xw.writeEndElement();
+			}
+			xw.writeEndElement();
+		xw.writeEndElement();
+	}
+
 
 	xw.writeEndElement(); // body
 
