@@ -251,7 +251,6 @@ tbody{
 					<xsl:text>.gif</xsl:text>
 				-->
 						<xsl:value-of select="@xlink:href"/>
-						<xsl:text>,80,100</xsl:text>
 					</xsl:attribute>
 				</img>
 			</a>
