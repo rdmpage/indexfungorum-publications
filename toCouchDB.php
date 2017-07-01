@@ -39,11 +39,13 @@ while (!$done)
 	$name = 'Minimelanolocus%';
 	//$name = 'Belemnospora%';
 	$name = 'Rhytidhysteron%';
+	$name = 'Lasiodiplodia%';
 	$sql = 'SELECT * FROM `names_indexfungorum` WHERE nameComplete LIKE "' . $name . '"';
 	
 	//$id = 522039;
 	//$id = 550939;
-	//$sql = 'SELECT * FROM `names_indexfungorum` WHERE id=' . $id;
+	$id = 103809;
+	$sql = 'SELECT * FROM `names_indexfungorum` WHERE id=' . $id;
 	
 
 	$result = $db->Execute($sql);
