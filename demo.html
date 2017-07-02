@@ -239,8 +239,8 @@
 						html += '<div>' + data.hits[i].message.namePublishedIn + '</div>';
 	
 						if (data.hits[i].message.doi) {
-							html += '<div><span onclick="show_crossref(\'' + data.hits[i].message.doi + '\')">' + data.hits[i].message.doi + '</span>'
-							//html += '<div><span onclick="show_work(\'' + data.hits[i].message.doi + '\')">' + data.hits[i].message.doi + '</span>'
+							//html += '<div><span onclick="show_crossref(\'' + data.hits[i].message.doi + '\')">' + data.hits[i].message.doi + '</span>'
+							html += '<div><span onclick="show_work(\'' + data.hits[i].message.doi + '\')">' + data.hits[i].message.doi + '</span>'
 						
 						}
 
@@ -322,6 +322,7 @@ aside, article {
  
 aside {
   flex: 1;
+   font-size: 0.8rem;
 }
  
 article {
