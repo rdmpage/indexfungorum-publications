@@ -40,13 +40,22 @@ while (!$done)
 	//$name = 'Belemnospora%';
 	$name = 'Rhytidhysteron%';
 	$name = 'Lasiodiplodia%';
+	$name = 'Jaminaea%';
+	$name = 'Thelonectria%';
+	$name = 'Oudemansiella%';
 	$sql = 'SELECT * FROM `names_indexfungorum` WHERE nameComplete LIKE "' . $name . '"';
 	
+	$sql .= ' LIMIT ' . $page . ' OFFSET ' . $offset;
+	
+	/*
 	//$id = 522039;
 	//$id = 550939;
 	$id = 103809;
+	$id = 570142;
 	$sql = 'SELECT * FROM `names_indexfungorum` WHERE id=' . $id;
+	*/
 	
+	echo $sql . "\n";
 
 	$result = $db->Execute($sql);
 	if ($result == false) die("failed [" . __FILE__ . ":" . __LINE__ . "]: " . $sql);
