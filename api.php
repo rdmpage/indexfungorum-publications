@@ -20,6 +20,7 @@ function display_simple_search ($q, $callback = '')
 	
 	
 	$url = '_design/names/_view/scientificName';
+	$url = '_design/search/_view/simple';
 	
 	
 	$url .= '?startkey=' . urlencode('"' . $q . '"');	
