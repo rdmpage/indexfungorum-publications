@@ -20,11 +20,13 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 
 $journals = array('Fungal Diversity');
 
+//$journals = array('Plos ONE');
 
 
 foreach ($journals as $journal)
 {
 	$sql = 'SELECT * FROM names_indexfungorum WHERE  title = "' . $journal .'" AND pages LIKE "10.%" AND doi IS NULL';
+	//$sql = 'SELECT * FROM names_indexfungorum WHERE  title = "' . $journal .'"  AND doi IS NULL';
 
 
 	$result = $db->Execute($sql);
@@ -50,6 +52,12 @@ foreach ($journals as $journal)
 			$doi = $m['doi'];
 			
 			echo "-- $doi\n";
+		}
+		
+		
+		if (preg_match('/e(?<id>\d+),/', $pages, $m))
+		{
+			$doi = '10.1371/journal.pone.' . str_pad($m['id'], 7, '0', STR_PAD_LEFT);
 		}
 		
 		if ($doi != '')
