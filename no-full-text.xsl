@@ -117,8 +117,11 @@ tbody{
 					
 					<xsl:if test="//abstract">
 						<h2>Abstract</h2>
-						<xsl:value-of select="//abstract"/>
+						<!-- <xsl:value-of select="//abstract"/> -->
+						<xsl:apply-templates select="//abstract"/>
 					</xsl:if>
+					
+					
 					
 					<!-- this is BioStor specific -->
 					
@@ -152,19 +155,22 @@ tbody{
 					<div>
 						<xsl:apply-templates select="//supplementary-material/graphic"/>
 					</div>
-					<!--
-					<div style="clear:both;"/>
+					
+					</xsl:if>
+					
+					
 					<xsl:if test="//floats-group">
+						<div style="clear:both;"/>
 						<h2>Images in this article</h2>
-						<p>Figures and tables extracted from ABBYY OCR XML.</p>
+						<!-- <p>Figures and tables extracted from ABBYY OCR XML.</p> -->
 						<div>
 							<xsl:apply-templates select="//fig"/>
 						</div>
 						<div style="clear:both;"/>
 					</xsl:if>
 					
-					-->
-					</xsl:if>
+					
+					
 					
 					<xsl:apply-templates select="//back"/>
 					
@@ -172,6 +178,17 @@ tbody{
 			<!-- </body>
 		</html> -->
 	</xsl:template>
+	
+<xsl:template match="abstract">
+	<p>
+	<xsl:if test="@xml:lang">
+		<xsl:text>[</xsl:text>
+		<xsl:value-of select="@xml:lang" />
+		<xsl:text>]</xsl:text>
+	</xsl:if>
+	<xsl:value-of select="." />
+	</p>
+</xsl:template>	
 	
 <xsl:template match="article-id">
 	<xsl:choose>
@@ -243,7 +260,7 @@ tbody{
 					<xsl:value-of select="@xlink:role"/>
 					<xsl:text>.html</xsl:text>
 				</xsl:attribute>
-				<img style="border:1px solid rgb(192,192,192);" height="140">
+				<img style="border:1px solid rgb(224,224,224);" height="140">
 					<xsl:attribute name="src">
 						<!--
 					<xsl:text>Med_Hist_1985_Jan_29(1)_1-32/</xsl:text>
