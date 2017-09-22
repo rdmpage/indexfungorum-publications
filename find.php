@@ -336,12 +336,36 @@ $journals = array(
 
 $journals = array('Review of Palaeobotany and Palynology (Amsterdam)');
 
+$journals = array('Mycoscience');
+$journals = array('J. Clin. Microbiol.');
+$journals = array('Persoonia, Mol. Phyl. Evol. Fungi');
+$journals = array('Acta Mycologica, Warszawa');
+$journals = array('Aust. Syst. Bot.');
+$journals = array('J. Clin. Microbiol.');
+$journals = array('Fungal Diversity');
+$journals = array('Nordic Jl Bot.');
+
+$journals = array('Aust. J. Bot.');
+$journals = array('Bot. Mar.');
+
+$journals=array('N.Z. Jl Bot.', 'Phytotaxa','Mycotaxon','Persoonia');
+
+
+$journals=array('N.Z. Jl Bot.', 'Phytotaxa','Mycotaxon','Persoonia');
+
+$journals = array('Bot. Gaz.');
+
+
 
 foreach ($journals as $journal)
 {
 	$sql = 'select * from names_indexfungorum where title = "' . $journal .'" and doi is NULL';	
-	//$sql .= ' AND year = 2013';
+	 //$sql .= ' AND year > 2013';
 	//$sql .= ' AND id < 100000';
+	//$sql .= ' AND volume IN (34,35,36,37)';
+	//$sql .= ' AND volume = 64';
+
+	//$sql = 'select * from names_indexfungorum where id > 813995 and doi is NULL';	
 	
 	
 	//$sql = 'select * from names_indexfungorum where id=131467';

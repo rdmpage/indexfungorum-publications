@@ -131,6 +131,13 @@ $title = 'Opuscula Philolichenum';
 $title = 'Mem. Torrey bot. Club';
 $title = 'Ann. bot. fenn.';
 
+$title = 'Mycosphere';
+$title = 'Revta Biol. trop.';
+$title = 'Fungal Diversity';
+
+$title = 'Am. J. Bot.';
+
+
 $sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" AND doi IS NULL';
 
 
@@ -138,13 +145,13 @@ $sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" AND 
 
 //$sql = 'SELECT * FROM ipni.names_indexfungorum WHERE id=333515'; 
 
-$sql .= ' and year = 2007';
+//$sql .= ' and year > 2001';
 //$sql .= ' and volume = 109';
 
 //echo $sql . "\n";
 
 $include_issue_in_search = false;
-$include_authors_in_search = false;
+$include_authors_in_search = true;
 
 $result = $db->Execute($sql);
 if ($result == false) die("failed [" . __FILE__ . ":" . __LINE__ . "]: " . $sql);
@@ -162,6 +169,19 @@ while (!$result->EOF)
 	$reference->authors = preg_replace('/\.$/', '', $reference->authors);
 	$reference->authors = preg_replace('/(.*) ex /', '', $reference->authors);
 	*/
+	
+	if ($result->fields['combinationAuthorship'] != '')
+	{
+		$reference->authors = $result->fields['combinationAuthorship'];
+	}
+	else
+	{
+		$reference->authors = $result->fields['basionymAuthorship'];
+	}
+	$reference->authors = preg_replace('/([A-Z]\.)/', '', $reference->authors);
+	$reference->authors = preg_replace('/\.$/', '', $reference->authors);
+	$reference->authors = preg_replace('/(.*) ex /', '', $reference->authors);
+	
 	
 	$reference->journal = new stdclass;
 	$reference->journal->name = $result->fields['title'];
@@ -199,6 +219,8 @@ while (!$result->EOF)
 		$reference->journal->pages = $result->fields['pages'];
 		
 		$reference->journal->pages = preg_replace('/-\d+/', '', $reference->journal->pages);
+		
+		$reference->journal->pages = preg_replace('/\s+.*/', '', $reference->journal->pages);
 	}
 		
 	$reference->year = $result->fields['year'];
