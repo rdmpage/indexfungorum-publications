@@ -60,11 +60,10 @@ function csl_to_jats(doc) {
 	if (doc.message.title) {
 
 	  if (Array.isArray(doc.message.title)) {
-		xw.writeElementString('article-title', doc.message.title[0]);
+		xw.writeElementString('article-title', '<![CDATA[' + doc.message.title[0] + ']]>');
 	  } else {
-		xw.writeElementString('article-title', doc.message.title);
+		xw.writeElementString('article-title', '<![CDATA[' + doc.message.title + ']]>');
 	  }
-
 	}
 	xw.writeEndElement();
 
@@ -131,9 +130,23 @@ function csl_to_jats(doc) {
 
 	// abstract
 	if (doc.message.abstract) {
-	  xw.writeStartElement('abstract');
-	  xw.writeElementString('p', doc.message.abstract);
-	  xw.writeEndElement();
+	
+	  // do we have multiple languages?
+	  if (doc.message.multi) {
+	  	if (doc.message.multi._key.abstract) {
+	  	
+	  	   for (var lang in doc.message.multi._key.abstract) {
+	  	   	xw.writeStartElement('abstract');
+			xw.writeAttributeString('xml:lang', lang);	  	   	
+			xw.writeElementString('p', doc.message.multi._key.abstract[lang]);
+	  	  	xw.writeEndElement();	  	   	
+	  	   }
+	  	}
+	  } else {
+		  xw.writeStartElement('abstract');
+		  xw.writeElementString('p', '<![CDATA[' + doc.message.abstract + ']]>');
+	  	  xw.writeEndElement();
+	  }
 	}
 
 	xw.writeEndElement(); // article-meta

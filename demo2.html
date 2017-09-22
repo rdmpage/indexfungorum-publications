@@ -282,7 +282,7 @@
 			function find() {
 		  // find stuff
 			var query = $('#query').val();	
-			search(query);
+			show_work(query);
 			}
 	
 	</script>
@@ -362,8 +362,10 @@ input, button {
 
 <div id="top" style="width:100%;height:40px;border:1px solid rgb(242,242,242);">
 	
-		<input type="text" id="query" value="Afrothismia" placeholder=""Afrothismia">
+	
+		<input type="text" id="query" value="10.15517/lank.v0i0.12106" placeholder="10.15517/lank.v0i0.12106">
 		<button id="find" onclick="find();">Search</button>	
+	
 	
 	</div> 
 
@@ -396,14 +398,20 @@ input, button {
 
 // show results
 
-search('Afrothismia');
+//search('Afrothismia');
 
 //show_work('10.3767/000651903x489429');
 
 //show_work('10.14258/turczaninowia.17.4.9');
 //show_work('10.3969/j.issn.2095-0845.2000.02.003');
-show_full_jats('');
+//show_full_jats('');
 //show_biostor(146644);
+
+show_work('http://www.zobodat.at/publikation_articles.php?id=120972');
+
+// show_work('10.15517/lank.v0i0.12106');
+
+//show_crossref('10.1371/journal.pone.0022232');
 
 //show_crossref('10.1007/s12225-013-9478-5');
 </script>
