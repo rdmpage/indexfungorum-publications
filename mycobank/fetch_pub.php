@@ -4,6 +4,8 @@ require_once (dirname(dirname(__FILE__)) . '/lib.php');
 
 $ids = array(34531,15474,7025);
 
+$ids=array(18252,4187,15929);
+
 foreach ($ids as $id)
 {
 	$url = 'http://www.mycobank.org/Services/Generic/SearchService.svc/rest/xml';

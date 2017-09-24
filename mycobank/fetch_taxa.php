@@ -4,7 +4,16 @@ require_once (dirname(dirname(__FILE__)) . '/lib.php');
 
 $ids = array(503003,287548,201027,503275);
 
-foreach ($ids as $id)
+$start = 503000;
+$stop  = 503999;
+
+$stop  = 503050;
+
+
+$pub_ids = array();
+
+for ($id = $start; $id <= $stop; $id++)
+//foreach ($ids as $id)
 {
 	$url = 'http://www.mycobank.org/Services/Generic/SearchService.svc/rest/xml';
 	
@@ -55,6 +64,8 @@ foreach ($ids as $id)
 					if (preg_match('/<TargetRecord><Id>(\d+)<\/Id>/Uu', $value, $m))
 					{
 						$obj->publishedInCitation = $m[1];
+						
+						$pub_ids[] = $obj->publishedInCitation;
 					}
 					if (preg_match('/<Name>(.*)<\/Name>/Uu', $value, $m))
 					{
@@ -80,10 +91,15 @@ foreach ($ids as $id)
 		}			
 	}
 
-
-
-	print_r($obj);
+	if (isset($obj->id))
+	{
+		print_r($obj);
+	}
 	
 }
+
+$pub_ids = array_unique($pub_ids);
+
+echo '$ids=array(' . join(",", $pub_ids) . ');' . "\n";
 
 ?>
