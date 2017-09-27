@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://www.mycobank.org/Services/Generic/SearchService.svc/rest/xml</string>
+	<string>http://127.0.0.1:5984/mycobank/_design/csl/_view/container-title</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>
@@ -22,17 +22,9 @@
 			<key>inUse</key>
 			<true/>
 			<key>parameter</key>
-			<string>filter</string>
+			<string>key</string>
 			<key>value</key>
-			<string>mycobanknr_="138405"</string>
-		</dict>
-		<dict>
-			<key>inUse</key>
-			<true/>
-			<key>parameter</key>
-			<string>layout</string>
-			<key>value</key>
-			<string>14682616000000161</string>
+			<string>"Bulletin de la Société Mycologique de France"</string>
 		</dict>
 	</array>
 	<key>parametersType</key>

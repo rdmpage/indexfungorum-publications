@@ -1,16 +1,18 @@
 <?php
 
-require_once (dirname(dirname(__FILE__)) . '/lib.php');
+require_once (dirname(__FILE__) . '/lib.php');
+require_once (dirname(__FILE__) . '/couchsimple.php');
 
 $ids = array(503003,287548,201027,503275);
 
 $start = 503000;
 $stop  = 503999;
 
-$stop  = 503050;
 
 
-$pub_ids = array();
+
+
+$ids = array(503003,287548,201027,503275);
 
 for ($id = $start; $id <= $stop; $id++)
 //foreach ($ids as $id)
@@ -49,7 +51,7 @@ for ($id = $start; $id <= $stop; $id++)
 			switch ($key)
 			{
 				case '_id':
-					$obj->id = $value;
+					$obj->url = 'http://www.mycobank.org/BioloMICS.aspx?Table=Mycobank&Rec=' . $value . '&Fields=All';
 					break;
 					
 				case 'name':
@@ -58,6 +60,7 @@ for ($id = $start; $id <= $stop; $id++)
 					
 				case 'mycobanknr_':
 					$obj->MYCOBANK = $value;
+					$obj->_id = 'MB' . $value;
 					break;
 		
 				case 'literature_pt_':
@@ -91,9 +94,43 @@ for ($id = $start; $id <= $stop; $id++)
 		}			
 	}
 
-	if (isset($obj->id))
+	if (isset($obj->_id))
 	{
 		print_r($obj);
+		
+		// clean up older data
+		if (1)
+		{
+			$couch->add_update_or_delete_document(null, $id, 'delete');
+		}
+		
+	
+		$go = true;
+
+		// Check whether this record already exists (i.e., have we done this object already?)
+		$exists = $couch->exists($obj->_id);
+
+		if ($exists)
+		{
+			echo $obj->_id . " exists\n";
+			$go = false;
+
+			if ($force)
+			{
+				echo "[forcing]\n";
+				$couch->add_update_or_delete_document(null, $obj->_id, 'delete');
+				$go = true;		
+			}
+		}
+
+		if ($go)
+		{
+			// Do we want to attempt to add any identifiers here, such as DOIs?
+			$resp = $couch->send("PUT", "/" . $config['couchdb_options']['database'] . "/" . urlencode($obj->_id), json_encode($obj));
+			var_dump($resp);					
+		}						
+		
+		
 	}
 	
 }
