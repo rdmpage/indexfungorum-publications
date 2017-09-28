@@ -28,8 +28,8 @@ $ids=array(35942);
 
 $ids=array(35000);
 
-$start = 45000;
-$stop  = 50000;
+$start = 65000;
+$stop  = 70000;
 
 $force = false;
 $count = 1;
