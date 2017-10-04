@@ -1,0 +1,2084 @@
+{
+    "species_hypotheses": {
+        "reference_sequence": {
+            "accnos": [
+                {
+                    "accno": "UDB003324",
+                    "database": "UNITE"
+                }
+            ],
+            "id": 3163,
+            "set_time": "2014-11-09 22:04:54",
+            "set_by": "Urmas Kõljalg"
+        },
+        "distance": "3.0",
+        "ecm_lineages": [
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "count": 30
+            }
+        ],
+        "maximum_distance": "8.56",
+        "sequences": [
+            {
+                "ordering": 1,
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317389.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH229845.07FU",
+                        "distance": "0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH081094.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH178034.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH037168.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139480.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "dna_source": "",
+                "its_sequence": "-----AAGGATCATTACTGAACTGTCAACATGAGTTGTTGCTGGCCCTCAAACGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCGGTAGTTCTATGGTGTGGAGGACTCTGTCCTCTGG-CTGTGGTTCTACATCTTT--ACACACACACGCAGTGATAAAGTCTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAACCCCTCATGGTTTACCATGATGGGCTTGGACTTTGGGGGTCTTGCTGGATTATAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTTTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAGG-TGTCTCTCCT-CTGTGAGG-AACAGCTCTTGAACGTT-GATCTC-----------------",
+                "insd_taxon_name": "uncultured Tomentella",
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "JQ991880"
+                    }
+                ],
+                "country_name": "China",
+                "id": 412336,
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "its_sequence": "----------------CTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTGTGGTGTGGAGGACACTGTCCTCCAA-CTGTGGTTCTACACCTTT----ACACACACACAGTGATAAAGTTTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTGCTATGATGGGCTTGGACTTTGGGGGTTTTGCTGGATTATAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTTTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGAGGTTCA-CTGGGGCTCACAAAAAGGTGTCTCTCCT-CTGTGAGGAATGGCTCTTTGAATG--------------------------",
+                "insd_taxon_name": "uncultured Tomentella",
+                "ordering": 2,
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317809.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH229727.07FU",
+                        "hex_colour": "#050cea"
+                    },
+                    {
+                        "sh_code": "SH080907.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177868.07FU",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "sh_code": "SH037026.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "2.0"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139367.07FU",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "dna_source": "",
+                "ecm_lineage": "/tomentella-thelephora",
+                "accnos": [
+                    {
+                        "accno": "AB777487",
+                        "database": "INSD"
+                    }
+                ],
+                "country_name": "Unspecified",
+                "id": 415573
+            },
+            {
+                "ordering": 3,
+                "longitude": "79.12000000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317492.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "hex_colour": "#050cea",
+                        "sh_code": "SH229727.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH080907.07FU",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177868.07FU",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "sh_code": "SH037026.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "sh_code": "SH139367.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "2.5"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Shorea robusta",
+                        "rank": "species"
+                    }
+                ],
+                "its_sequence": "---GGAAGGATCATTACTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTGTGGCGTGGAGGACACTGTCCTCCAA-CTGTGGTTCTACACCTTT----ACACACACACAGTGATAAAGTTTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTGCTATGATGGGCTTGGACTTTGGGGGTCTTGCTGGATTATAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTTTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGAGGTTCA-CTGGGGCTCACAAAAAGGTGTCTCTCCT-CTGTGAGGAATGGCTCTTTGAATG--------------------------",
+                "latitude": "29.40000000",
+                "accnos": [
+                    {
+                        "accno": "UDB014468",
+                        "database": "UNITE"
+                    }
+                ],
+                "country_name": "India",
+                "id": 383016,
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "ordering": 4,
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317216.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "hex_colour": "#cae3cf",
+                        "sh_code": "SH229719.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080907.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177868.07FU",
+                        "distance": "1.5",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "sh_code": "SH037026.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139367.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "2.5"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Tomentella",
+                "dna_source": "",
+                "its_sequence": "---GGAAGGATCATTACTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTGTGGTGTGGAGGACACTGTCCTCCAA-CTGTGGTTCTACACCTTT--ACACACACACACAGTGATAAAGTTTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTGCTATGATGGGCTTGGACTTTGGGGGTTTTGCTGGATTATAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTTTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAAGGTGTCTCTCCT-CTGTGAGGAATGGCTCTTTGAATG--------------------------",
+                "insd_taxon_name": "uncultured fungus",
+                "accnos": [
+                    {
+                        "accno": "JN969402",
+                        "database": "INSD"
+                    }
+                ],
+                "country_name": "Thailand",
+                "id": 285466,
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "id": 156161,
+                "accnos": [
+                    {
+                        "database": "UNITE",
+                        "accno": "UDB004831"
+                    }
+                ],
+                "latitude": "16.85400000",
+                "country_name": "Thailand",
+                "ecm_lineage": "/tomentella-thelephora",
+                "unite_taxon_name": "Thelephoraceae",
+                "longitude": "100.51800000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317216.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH229719.07FU",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "sh_code": "SH080907.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177868.07FU",
+                        "hex_colour": "#cae3cf",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH037026.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139367.07FU",
+                        "hex_colour": "#cae3cf"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "rank": "family",
+                        "taxon_name": "Dipterocarpaceae"
+                    }
+                ],
+                "ordering": 5,
+                "its_sequence": "---GGAAGGATCATTACTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTGTGGTGTGGAGGACACTGTCCTCCAA-CTGTGGTTCTACACCTTT--ACACACACACACAGTGATAAAGTTTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTGCTATGATGGGCTTGGACTTTGGGGGTTTTGCTGGATTATAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTTTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAAGGTGTCTCTCCT-CTGTGAGGAATGGCTCTTTGAATG--------------------------"
+            },
+            {
+                "longitude": "-98.73000000",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH318243.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH230309.07FU",
+                        "distance": "0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH081392.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH178262.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Tomentella",
+                "dna_source": "",
+                "ordering": 6,
+                "insd_taxon_name": "Tomentella aff. pilosa GO-2009-247",
+                "its_sequence": "-----------CATTATTGAACTGTCAACATGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGCGGAGGACACTGTCCTCTGA-CTGTGGTTCTAYGTCTTTACACACACACACATAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATTGGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCRGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAT---GTCTCTC-----------------------------------------------------",
+                "id": 394202,
+                "accnos": [
+                    {
+                        "accno": "KC152245",
+                        "database": "INSD"
+                    }
+                ],
+                "latitude": "19.20000000",
+                "country_name": "Mexico",
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "its_sequence": "------AGGATCATTATTGAACTGTCAACAGGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTACGTCTTT--ACACACACGCCTAGTGACAAAGTCTAATGGAATGTATGTCGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATACCTGTTTGAGTATCATGAACATCTCAA-CCCTCATGGTTTACCGT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGATTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GCCTCTCCT-TGGTGAGG-ACAGCTCTTTGAACG--------------------------",
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "ordering": 7,
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "rank": "genus",
+                        "taxon_name": "Quercus"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "longitude": "-99.60000000",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH317651.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH229992.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "0.5"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH081193.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH178112.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "Mexico",
+                "latitude": "18.60000000",
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "FJ196980"
+                    }
+                ],
+                "id": 27598
+            },
+            {
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "FJ403506"
+                    }
+                ],
+                "latitude": "47.98000000",
+                "country_name": "Germany",
+                "id": 33220,
+                "ecm_lineage": "/tomentella-thelephora",
+                "ordering": 8,
+                "longitude": "8.75000000",
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH318343.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH230372.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH081423.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "rank": "species",
+                        "taxon_name": "Fagus sylvatica"
+                    }
+                ],
+                "its_sequence": "----------------------TGTC-ACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTTACACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCRTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTAYCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTYGCCAGTGTCTGGTGGCRTCACAGGTGTGATAATTATCTAYGCTTGTGGTTTTACATCAGGTAAC----------------------------------------------------------------------------------------------------",
+                "insd_taxon_name": "uncultured Tomentella"
+            },
+            {
+                "id": 431843,
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "KF476792"
+                    }
+                ],
+                "country_name": "Unspecified",
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "its_sequence": "----------------------------------------------------------CATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACCGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACATAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAGTATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCANCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCANGTAACCTTCAGAG-ATGGGGGTTCG-CTGGGGCTCACAAAAG---GCCTCTCCT-CGGTGAGG-ATGGCTCTTTGAATGTTTGATCTCAAATCAGTAGGACTACC",
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH318235.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH230305.07FU",
+                        "distance": "0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH081390.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "dna_source": "",
+                "ordering": 9
+            },
+            {
+                "ordering": 10,
+                "longitude": "-121.28300000",
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH317657.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH229995.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH081196.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "dna_source": "Fungal mycelium (ingrowth bag)",
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Quercus wislizeni",
+                        "rank": "species"
+                    }
+                ],
+                "its_sequence": "------AGGATCATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCATTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACATAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAC-GTGGGTTTGGACTTTGGGGGTCTTGCTGGATTGTATTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACGGGTGTGATAATTATCTACGCTTGTGGCTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGTTCTTTGAACG--------------------------",
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "latitude": "39.28300000",
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "EU726320"
+                    }
+                ],
+                "country_name": "United States",
+                "id": 44344,
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "its_sequence": "-----AAGGATCATTATTGAACTGTTGACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACGCTCTGTTTACAAATCCACTCACACCTGTGCACCCTCTGTAGTTCTATGGTGTGGAGGGCACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACAC--AGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTGCCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATGTT-GATCTC-----------------",
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "ordering": 11,
+                "dna_source": "",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH317467.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH229896.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "0.5"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH081130.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "China",
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "JQ991867"
+                    }
+                ],
+                "id": 412349
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "Turkey",
+                "accnos": [
+                    {
+                        "accno": "UDB004963",
+                        "database": "UNITE"
+                    }
+                ],
+                "latitude": "36.52600000",
+                "id": 156215,
+                "its_sequence": "---GGAAGGATCATTATTGAACTGTTGACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACATTGTCCTCTGACCCGTGGTTCTATGTCTTT--ACACACACAC--AGTGACAAAGTCTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CAGTGAGG-ATGACTCTTTGAATGTTTGATCTCAAATCAGG---------",
+                "ordering": 12,
+                "dna_source": "Fruitbody",
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Quercus",
+                        "rank": "genus"
+                    }
+                ],
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317347.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH229817.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH081078.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "longitude": "32.31380000",
+                "unite_taxon_name": "Tomentella"
+            },
+            {
+                "accnos": [
+                    {
+                        "accno": "KF041404",
+                        "database": "INSD"
+                    }
+                ],
+                "country_name": "Mexico",
+                "id": 466921,
+                "ordering": 13,
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH318265.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH230324.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Abies religiosa",
+                        "rank": "species"
+                    }
+                ],
+                "dna_source": "",
+                "its_sequence": "-------------TTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCCGA-CCGTGGTTCTATGTCTTT--ACACACACACATAGTGACAAAGTCTAATGGGATGTATGTAGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCT------------------------------------------------------",
+                "insd_taxon_name": "uncultured Tomentella"
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "accnos": [
+                    {
+                        "accno": "UDB000241",
+                        "database": "UNITE"
+                    }
+                ],
+                "country_name": "Estonia",
+                "id": 2984,
+                "its_sequence": "----------------------------------------------------TGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTTACACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAGAATGGGGGTTCA-CTGGGGCTCACAAAAAG--GTCTCTCCT-CGGTGAGG-ATGACTCTTTGAATGTTTGATCTCAAATC------------",
+                "ordering": 14,
+                "sh_colours": [
+                    {
+                        "sh_code": "SH318236.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH230306.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Tomentella pilosa",
+                "images": [
+                    {
+                        "author": "Urmas Kõljalg",
+                        "license": "Attribution-NonCommercial (CC BY-NC)",
+                        "id": "695199",
+                        "rights_owner": "Urmas Kõljalg",
+                        "title": "TAAM152428",
+                        "download_links": {
+                            "small": "https://files.plutof.ut.ee/public/small/E1/13/E11377C816F6063E02BC4CDA91937DB1B40773707EEECAEC23FA1009BCCE5906.JPG",
+                            "medium": "https://files.plutof.ut.ee/public/medium/E1/13/E11377C816F6063E02BC4CDA91937DB1B40773707EEECAEC23FA1009BCCE5906.JPG",
+                            "large": "https://files.plutof.ut.ee/public/large/E1/13/E11377C816F6063E02BC4CDA91937DB1B40773707EEECAEC23FA1009BCCE5906.JPG"
+                        }
+                    },
+                    {
+                        "download_links": {
+                            "medium": "https://files.plutof.ut.ee/public/medium/8D/E5/8DE507A0CC1547653360F3E5625BB9084E754C53E9BD5507341B48AE903781CA.JPG",
+                            "small": "https://files.plutof.ut.ee/public/small/8D/E5/8DE507A0CC1547653360F3E5625BB9084E754C53E9BD5507341B48AE903781CA.JPG",
+                            "large": "https://files.plutof.ut.ee/public/large/8D/E5/8DE507A0CC1547653360F3E5625BB9084E754C53E9BD5507341B48AE903781CA.JPG"
+                        },
+                        "rights_owner": "Urmas Kõljalg",
+                        "title": "TAAM152428",
+                        "author": "Urmas Kõljalg",
+                        "license": "Attribution-NonCommercial (CC BY-NC)",
+                        "id": "695213"
+                    }
+                ],
+                "dna_source": "Fruitbody"
+            },
+            {
+                "accnos": [
+                    {
+                        "accno": "KC791124",
+                        "database": "INSD"
+                    }
+                ],
+                "latitude": "33.80830000",
+                "country_name": "United States",
+                "id": 467817,
+                "ordering": 15,
+                "unite_taxon_name": "Fungi",
+                "longitude": "-116.77780000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317952.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH230177.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "interacting_taxa": [
+                    {
+                        "rank": "species",
+                        "taxon_name": "Quercus kelloggii"
+                    }
+                ],
+                "dna_source": "",
+                "its_sequence": "----------------TTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCCGA-CCGTGGTTCTATGTCTTT--ACACACACACATAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCAAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGATTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-TGGTGAGG-ACAGCTCTTTGAATG--------------------------",
+                "insd_taxon_name": "uncultured fungus"
+            },
+            {
+                "ordering": 16,
+                "dna_source": "Fungal mycelium (ingrowth bag)",
+                "longitude": "-79.09693000",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH317763.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH230055.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "its_sequence": "-----------CATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACATGGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATTGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGCGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-TGGTGAGG-ACAGCTCTTTGAATG--------------------------",
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "country_name": "United States",
+                "latitude": "35.97759000",
+                "accnos": [
+                    {
+                        "accno": "EF619816",
+                        "database": "INSD"
+                    }
+                ],
+                "id": 60750,
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "its_sequence": "---GGAAGGATCATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGCCTTGCTGGATTGTAGTCAGCTCCCCTTAAATAAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTAAATG--------------------------",
+                "dna_source": "Fruitbody",
+                "longitude": "51.57102000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317573.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH229950.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "ordering": 17,
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 227440,
+                "country_name": "Iran, Islamic Republic of",
+                "latitude": "36.59781000",
+                "accnos": [
+                    {
+                        "database": "UNITE",
+                        "accno": "UDB010507"
+                    }
+                ]
+            },
+            {
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317382.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH229839.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "0.5"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "rank": "species",
+                        "taxon_name": "Quercus suber"
+                    }
+                ],
+                "ordering": 18,
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "its_sequence": "-----------CATTATTGAACTGTCAACNCGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGN-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAN-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCAGCTGGGGCTTACAAAAG---GTCTCTCCTGCAGTGAGG-ACAGCTCTTTGAATGTTTGATCTCAAATCAGGA--------",
+                "id": 7952,
+                "accnos": [
+                    {
+                        "accno": "AM924148",
+                        "database": "INSD"
+                    }
+                ],
+                "country_name": "Portugal",
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 3163,
+                "country_name": "Estonia",
+                "latitude": "59.12825000",
+                "accnos": [
+                    {
+                        "database": "UNITE",
+                        "accno": "UDB003324"
+                    }
+                ],
+                "is_reference": true,
+                "its_sequence": "-------------TTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CGGTGAGG-ATGACTCTTTGAATG--------------------------",
+                "images": [
+                    {
+                        "author": "Urmas Kõljalg",
+                        "license": "Attribution-NonCommercial (CC BY-NC)",
+                        "id": "652069",
+                        "rights_owner": "Urmas Kõljalg",
+                        "title": "TU100825",
+                        "download_links": {
+                            "medium": "https://files.plutof.ut.ee/public/medium/49/07/49071730A25039BDEEEB824F8DEA171F8157608E70DEF6960A3EC68750BF30C3.JPG",
+                            "small": "https://files.plutof.ut.ee/public/small/49/07/49071730A25039BDEEEB824F8DEA171F8157608E70DEF6960A3EC68750BF30C3.JPG",
+                            "large": "https://files.plutof.ut.ee/public/large/49/07/49071730A25039BDEEEB824F8DEA171F8157608E70DEF6960A3EC68750BF30C3.JPG"
+                        }
+                    }
+                ],
+                "dna_source": "Fruitbody",
+                "unite_taxon_name": "Tomentella pilosa",
+                "longitude": "23.67463000",
+                "sh_colours": [
+                    {
+                        "is_refseq": true,
+                        "sh_code": "SH317778.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "is_refseq": true,
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH229608.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "is_refseq": true
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5",
+                        "is_refseq": true
+                    },
+                    {
+                        "is_refseq": true,
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "is_refseq": true,
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0",
+                        "is_refseq": true
+                    }
+                ],
+                "ordering": 19
+            },
+            {
+                "accnos": [
+                    {
+                        "accno": "UDB018481",
+                        "database": "UNITE"
+                    }
+                ],
+                "country_name": "Estonia",
+                "id": 167148,
+                "ecm_lineage": "/tomentella-thelephora",
+                "ordering": 20,
+                "sh_colours": [
+                    {
+                        "hex_colour": "#ffffff",
+                        "sh_code": "SH317696.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH229608.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Tomentella pilosa",
+                "dna_source": "Fruitbody",
+                "images": [
+                    {
+                        "title": "TU100205",
+                        "rights_owner": "Urmas Kõljalg",
+                        "id": "695184",
+                        "license": "Attribution-NonCommercial (CC BY-NC)",
+                        "author": "Urmas Kõljalg",
+                        "download_links": {
+                            "large": "https://files.plutof.ut.ee/public/large/45/D1/45D1C064395524C4533D4A848EF9FEB425F805B3022851E547635917839BF6B5.JPG",
+                            "small": "https://files.plutof.ut.ee/public/small/45/D1/45D1C064395524C4533D4A848EF9FEB425F805B3022851E547635917839BF6B5.JPG",
+                            "medium": "https://files.plutof.ut.ee/public/medium/45/D1/45D1C064395524C4533D4A848EF9FEB425F805B3022851E547635917839BF6B5.JPG"
+                        }
+                    }
+                ],
+                "its_sequence": "Locked sequence"
+            },
+            {
+                "its_sequence": "---GGAAGGATCATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCRTCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CGGTGAGG-ATGACTCTTTGAATG--------------------------",
+                "longitude": "26.72417000",
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317528.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH229608.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "1.0",
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.0",
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Betula pendula",
+                        "rank": "species"
+                    }
+                ],
+                "ordering": 21,
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 179121,
+                "accnos": [
+                    {
+                        "accno": "UDB008005",
+                        "database": "UNITE"
+                    }
+                ],
+                "latitude": "58.36500000",
+                "country_name": "Estonia"
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 45940,
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "EU668216"
+                    }
+                ],
+                "country_name": "United Kingdom",
+                "insd_taxon_name": "uncultured Tomentella",
+                "its_sequence": "----------------TTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCGTCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CGGTGAGG-ATGACTCTTTGAATGTT-GATCTCAA-TCAGG---------",
+                "unite_taxon_name": "Thelephoraceae",
+                "sh_colours": [
+                    {
+                        "distance": "<0.5",
+                        "sh_code": "SH317495.07FU",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH229608.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "dna_source": "Plant root",
+                "ordering": 22
+            },
+            {
+                "its_sequence": "---------------------------------------GCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAMATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CTGTGGTTCTATGTCTTT--ACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CGGTGAGG-ATGACTCTTTGAATG--------------------------",
+                "unite_taxon_name": "Thelephoraceae",
+                "longitude": "27.31667000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317312.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH229608.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "interacting_taxa": [
+                    {
+                        "rank": "genus",
+                        "taxon_name": "Populus"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "ordering": 23,
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 157501,
+                "accnos": [
+                    {
+                        "database": "UNITE",
+                        "accno": "UDB005088"
+                    }
+                ],
+                "latitude": "58.28333000",
+                "country_name": "Estonia"
+            },
+            {
+                "dna_source": "",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH317312.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH229608.07FU",
+                        "distance": "0.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "ordering": 24,
+                "insd_taxon_name": "Thelephoraceae sp B326",
+                "its_sequence": "---------------------------------------GCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAMATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTATGGAGGACACTGTCCTCTGA-CTGTGGTTCTATGTCTTT--ACACACACACACAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCATGGTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GTCTCTCCT-CGGTGAGG-ATGACTCTTTGAATG--------------------------",
+                "id": 169197,
+                "country_name": "Estonia",
+                "accnos": [
+                    {
+                        "accno": "FN669277",
+                        "database": "INSD"
+                    }
+                ],
+                "ecm_lineage": "/tomentella-thelephora"
+            },
+            {
+                "its_sequence": "-------------------------------------------------------------------------------AATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTCACAAAAG---GT----------------------------------------------------------",
+                "insd_taxon_name": "uncultured ectomycorrhizal fungus",
+                "ordering": 25,
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Anthophyta",
+                        "rank": "phylum"
+                    }
+                ],
+                "longitude": "10.52333000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH318355.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH229582.07FU",
+                        "hex_colour": "#d2dd85",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "Germany",
+                "accnos": [
+                    {
+                        "accno": "EU816682",
+                        "database": "INSD"
+                    }
+                ],
+                "latitude": "51.09111000",
+                "id": 39750
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "latitude": "51.09111000",
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "EU816644"
+                    }
+                ],
+                "country_name": "Germany",
+                "id": 39788,
+                "its_sequence": "------------------------------------------------------------TGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTKA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCT-----------------------------------------------------------------------",
+                "insd_taxon_name": "uncultured Thelephoraceae",
+                "ordering": 26,
+                "sh_colours": [
+                    {
+                        "sh_code": "SH318350.07FU",
+                        "hex_colour": "#ffffff",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "hex_colour": "#d2dd85",
+                        "sh_code": "SH229582.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "longitude": "10.52333000",
+                "unite_taxon_name": "Thelephoraceae",
+                "interacting_taxa": [
+                    {
+                        "rank": "phylum",
+                        "taxon_name": "Anthophyta"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza"
+            },
+            {
+                "its_sequence": "---GGAAGGATCATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTC-AATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACAATGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATG--------------------------",
+                "ordering": 27,
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Tilia cordata",
+                        "rank": "species"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "longitude": "27.81667000",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317610.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#ffffff"
+                    },
+                    {
+                        "sh_code": "SH229582.07FU",
+                        "hex_colour": "#d2dd85",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "Estonia",
+                "accnos": [
+                    {
+                        "accno": "UDB013569",
+                        "database": "UNITE"
+                    }
+                ],
+                "latitude": "59.17444000",
+                "id": 343047
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "Italy",
+                "accnos": [
+                    {
+                        "accno": "JX625348",
+                        "database": "INSD"
+                    }
+                ],
+                "id": 382580,
+                "its_sequence": "----------------TTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATGTT------------------------",
+                "insd_taxon_name": "uncultured Tomentella",
+                "ordering": 28,
+                "dna_source": "",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317132.07FU",
+                        "distance": "<0.5",
+                        "hex_colour": "#d2dd85"
+                    },
+                    {
+                        "sh_code": "SH229582.07FU",
+                        "hex_colour": "#d2dd85",
+                        "distance": "0.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae"
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "country_name": "Iran, Islamic Republic of",
+                "accnos": [
+                    {
+                        "accno": "FR852208",
+                        "database": "INSD"
+                    }
+                ],
+                "id": 235305,
+                "its_sequence": "---GGAAGGATCATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATG--------------------------",
+                "insd_taxon_name": "uncultured Tomentella",
+                "ordering": 29,
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "rank": "order",
+                        "taxon_name": "Fagales"
+                    }
+                ],
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317132.07FU",
+                        "hex_colour": "#d2dd85",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH229582.07FU",
+                        "hex_colour": "#d2dd85"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae"
+            },
+            {
+                "accnos": [
+                    {
+                        "accno": "UDB017104",
+                        "database": "UNITE"
+                    }
+                ],
+                "latitude": "58.45000000",
+                "country_name": "Estonia",
+                "id": 177,
+                "is_representative": true,
+                "ecm_lineage": "/tomentella-thelephora",
+                "ordering": 30,
+                "unite_taxon_name": "Thelephoraceae",
+                "longitude": "22.00000000",
+                "sh_colours": [
+                    {
+                        "hex_colour": "#d2dd85",
+                        "sh_code": "SH317132.07FU",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH229582.07FU",
+                        "distance": "0.5",
+                        "hex_colour": "#d2dd85"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "3.0"
+                    }
+                ],
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Anthophyta",
+                        "rank": "phylum"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "its_sequence": "----------------TTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATG--------------------------"
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 139417,
+                "accnos": [
+                    {
+                        "database": "INSD",
+                        "accno": "AJ421252"
+                    }
+                ],
+                "country_name": "Hungary",
+                "insd_taxon_name": "Tomentella pilosa",
+                "its_sequence": "----------------------------------------------------TGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATGTTTGATC-------------------",
+                "unite_taxon_name": "Tomentella pilosa",
+                "sh_colours": [
+                    {
+                        "distance": "<0.5",
+                        "sh_code": "SH317132.07FU",
+                        "hex_colour": "#d2dd85"
+                    },
+                    {
+                        "hex_colour": "#d2dd85",
+                        "sh_code": "SH229582.07FU",
+                        "distance": "0.5"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "1.5",
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.5"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Populus alba",
+                        "rank": "species"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "ordering": 31
+            },
+            {
+                "ecm_lineage": "/tomentella-thelephora",
+                "id": 50056,
+                "accnos": [
+                    {
+                        "accno": "EU444541",
+                        "database": "INSD"
+                    }
+                ],
+                "country_name": "Italy",
+                "insd_taxon_name": "Tomentella sp EDM19",
+                "its_sequence": "----------------TTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATGTTTGATCTC-----------------",
+                "unite_taxon_name": "Tomentella",
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317132.07FU",
+                        "hex_colour": "#d2dd85",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "distance": "0.5",
+                        "sh_code": "SH229582.07FU",
+                        "hex_colour": "#d2dd85"
+                    },
+                    {
+                        "sh_code": "SH080829.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "distance": "1.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "distance": "2.0",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "2.5",
+                        "sh_code": "SH139300.07FU",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "distance": "3.0",
+                        "sh_code": "SH002467.07FU",
+                        "hex_colour": "#a92b83"
+                    }
+                ],
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Fagus sylvatica",
+                        "rank": "species"
+                    }
+                ],
+                "dna_source": "Ectomycorrhiza",
+                "ordering": 32
+            },
+            {
+                "ordering": 33,
+                "sh_colours": [
+                    {
+                        "sh_code": "SH317132.07FU",
+                        "hex_colour": "#d2dd85",
+                        "distance": "<0.5"
+                    },
+                    {
+                        "sh_code": "SH229582.07FU",
+                        "distance": "0.5",
+                        "hex_colour": "#d2dd85"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH080829.07FU",
+                        "distance": "1.0"
+                    },
+                    {
+                        "sh_code": "SH177790.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "1.5"
+                    },
+                    {
+                        "sh_code": "SH036953.07FU",
+                        "hex_colour": "#a92b83",
+                        "distance": "2.0"
+                    },
+                    {
+                        "sh_code": "SH139300.07FU",
+                        "distance": "2.5",
+                        "hex_colour": "#a92b83"
+                    },
+                    {
+                        "hex_colour": "#a92b83",
+                        "sh_code": "SH002467.07FU",
+                        "distance": "3.0"
+                    }
+                ],
+                "unite_taxon_name": "Thelephoraceae",
+                "dna_source": "Ectomycorrhiza",
+                "interacting_taxa": [
+                    {
+                        "taxon_name": "Populus alba",
+                        "rank": "species"
+                    }
+                ],
+                "its_sequence": "TGCGGAAGGATCATTATTGAACTGTCAACACGAGTTGTTGCTGGCCCTCAAATGGGGGCATGTGCACACTCTGTTTACAAATCCACTCACACCTGTGCACCCTCAGTAGTTCTATGGTGTGGAGGACACTGTCCTCTGA-CCGTGGTTCTATGTCTTT--ACACACACACTTAGTGACAAAGTCTAATGGGATGTATGTGGCGTTTAACGCAATATAATACAACTTTCAGCAACGGATCTCTTGGCTCTCGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAATGTGAATTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACCTTGCGCCCTTTGGCTATTCCGAAGGGCATGCCTGTTTGAGTATCATGAACACCTCAA-CCCTCATGGTTTACCAT-GTGGGCTTGGACTTTGGGGGTCTTGCTGGATTGTAGTCAGCTCCCCTTAAATGAATCAGCTTGCCAGTGTCTGGTGGCATCACAGGTGTGATAATTATCTACGCTTGTGGTTTTACATCAGGTAACCTTCAGAG-ATGGGGGTTCA-CTGGGGCTTACAAAAG---GTCTCTCCT-CGGTGAGG-ACAGCTCTTTGAATGTTTGATCTCAAATC------------",
+                "insd_taxon_name": "uncultured Tomentella",
+                "accnos": [
+                    {
+                        "accno": "AY874385",
+                        "database": "INSD"
+                    }
+                ],
+                "country_name": "Hungary",
+                "id": 88198,
+                "ecm_lineage": "/tomentella-thelephora"
+            }
+        ],
+        "distribution_graph": "SH002467.07FU_graph.png",
+        "sh_code": "SH002467.07FU",
+        "identifications": [
+            {
+                "taxon_name": "Fungi",
+                "count": 1,
+                "rank": "species"
+            },
+            {
+                "taxon_name": "Thelephoraceae",
+                "rank": "species",
+                "count": 24
+            },
+            {
+                "rank": "species",
+                "count": 4,
+                "taxon_name": "Tomentella"
+            },
+            {
+                "taxon_name": "Tomentella pilosa",
+                "rank": "species",
+                "count": 4
+            }
+        ],
+        "lineage": {
+            "class": "Agaricomycetes",
+            "family": "Thelephoraceae",
+            "phylum": "Basidiomycota",
+            "kingdom": "Fungi",
+            "genus": "Tomentella",
+            "order": "Thelephorales"
+        },
+        "average_distance": "3.18",
+        "sequence_count": 33,
+        "pairwise_distance_count": 528,
+        "taxon": {
+            "lsid": "urn:lsid:indexfungorum.org:names:324677",
+            "full_taxon_name": "Tomentella pilosa (Burt) Bourdot & Galzin",
+            "taxon_name": "Tomentella pilosa",
+            "rank": "species"
+        },
+        "interacting_taxa": [
+            {
+                "taxon_name": "Abies religiosa",
+                "rank": "species",
+                "count": 1
+            },
+            {
+                "count": 3,
+                "rank": "phylum",
+                "taxon_name": "Anthophyta"
+            },
+            {
+                "taxon_name": "Betula pendula",
+                "rank": "species",
+                "count": 1
+            },
+            {
+                "count": 1,
+                "rank": "family",
+                "taxon_name": "Dipterocarpaceae"
+            },
+            {
+                "rank": "order",
+                "count": 1,
+                "taxon_name": "Fagales"
+            },
+            {
+                "taxon_name": "Fagus sylvatica",
+                "count": 2,
+                "rank": "species"
+            },
+            {
+                "rank": "genus",
+                "count": 1,
+                "taxon_name": "Populus"
+            },
+            {
+                "taxon_name": "Populus alba",
+                "count": 2,
+                "rank": "species"
+            },
+            {
+                "taxon_name": "Quercus",
+                "rank": "genus",
+                "count": 2
+            },
+            {
+                "taxon_name": "Quercus kelloggii",
+                "rank": "species",
+                "count": 1
+            },
+            {
+                "taxon_name": "Quercus suber",
+                "count": 1,
+                "rank": "species"
+            },
+            {
+                "rank": "species",
+                "count": 1,
+                "taxon_name": "Quercus wislizeni"
+            },
+            {
+                "rank": "species",
+                "count": 1,
+                "taxon_name": "Shorea robusta"
+            },
+            {
+                "taxon_name": "Tilia cordata",
+                "rank": "species",
+                "count": 1
+            }
+        ]
+    }
+}
