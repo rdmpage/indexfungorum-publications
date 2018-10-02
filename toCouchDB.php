@@ -43,11 +43,12 @@ while (!$done)
 	$name = 'Jaminaea%';
 	$name = 'Thelonectria%';
 	$name = 'Oudemansiella%';
-	$name = 'Irpex%';
+	$name = 'Hohenbuehelia%';
+	//$name = 'Irpex%';
 	$sql = 'SELECT * FROM `names_indexfungorum` WHERE nameComplete LIKE "' . $name . '"';
 	
 	
-	$sql = 'SELECT * FROM `names_indexfungorum` WHERE title = "Schlechtendalia"';
+	//$sql = 'SELECT * FROM `names_indexfungorum` WHERE title = "Schlechtendalia"';
 	
 	$sql .= ' LIMIT ' . $page . ' OFFSET ' . $offset;
 	

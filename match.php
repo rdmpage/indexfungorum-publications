@@ -137,6 +137,10 @@ $title = 'Fungal Diversity';
 
 $title = 'Am. J. Bot.';
 
+$title = 'Persoonia';
+$title = 'Persoonia, Mol. Phyl. Evol. Fungi';
+
+$title = 'Cryptog. Mycol.';
 
 $sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" AND doi IS NULL';
 
@@ -151,7 +155,7 @@ $sql = 'SELECT * FROM ipni.names_indexfungorum WHERE title="' . $title . '" AND 
 //echo $sql . "\n";
 
 $include_issue_in_search = false;
-$include_authors_in_search = true;
+$include_authors_in_search = false;
 
 $result = $db->Execute($sql);
 if ($result == false) die("failed [" . __FILE__ . ":" . __LINE__ . "]: " . $sql);

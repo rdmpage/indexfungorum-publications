@@ -27,7 +27,7 @@ function default_display()
 	$num_names = 0;
 	$num_dois = 0;
 	
-	$sql = 'SELECT COUNT(id) AS c FROM names_indexFungorum';
+	$sql = 'SELECT COUNT(id) AS c FROM names_indexfungorum';
 
 	$result = $db->Execute($sql);
 	if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -37,7 +37,7 @@ function default_display()
 		$num_names = $result->fields['c'];
 	}
 
-	$sql = 'SELECT COUNT(id) AS c FROM names_indexFungorum WHERE doi IS NOT NULL';
+	$sql = 'SELECT COUNT(id) AS c FROM names_indexfungorum WHERE doi IS NOT NULL';
 
 	$result = $db->Execute($sql);
 	if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -95,7 +95,7 @@ function display_search($query, $type = 'genus')
 		switch($type)
 		{
 			case 'genus':
-				$sql = 'SELECT * FROM names_indexFungorum WHERE genusPart = ' . $db->qstr($query) . ' LIMIT 1';
+				$sql = 'SELECT * FROM names_indexfungorum WHERE genusPart = ' . $db->qstr($query) . ' LIMIT 1';
 			
 				$result = $db->Execute($sql);
 				if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -109,7 +109,7 @@ function display_search($query, $type = 'genus')
 				break;
 
 			case 'publication':
-				$sql = 'SELECT * FROM names_indexFungorum WHERE title = ' . $db->qstr($query) . ' LIMIT 1';
+				$sql = 'SELECT * FROM names_indexfungorum WHERE title = ' . $db->qstr($query) . ' LIMIT 1';
 			
 				$result = $db->Execute($sql);
 				if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -159,14 +159,14 @@ function display_search($query, $type = 'genus')
 //--------------------------------------------------------------------------------------------------
 function display_publication($publication)
 {
-	$sql = 'SELECT * FROM names_indexFungorum WHERE title = "' . $publication . '" ORDER BY year, volume, pages';
+	$sql = 'SELECT * FROM names_indexfungorum WHERE title = "' . $publication . '" ORDER BY year, volume, pages';
 	display_query($sql);
 }
 
 //--------------------------------------------------------------------------------------------------
 function display_genus($genus)
 {
-	$sql = 'SELECT * FROM names_indexFungorum WHERE genusPart = "' . $genus . '" OR nameComplete="' . $genus . '" ORDER BY specificEpithet';
+	$sql = 'SELECT * FROM names_indexfungorum WHERE genusPart = "' . $genus . '" OR nameComplete="' . $genus . '" ORDER BY specificEpithet';
 	display_query($sql);
 }
 

@@ -353,14 +353,16 @@ $journals=array('N.Z. Jl Bot.', 'Phytotaxa','Mycotaxon','Persoonia');
 
 $journals=array('N.Z. Jl Bot.', 'Phytotaxa','Mycotaxon','Persoonia');
 
-$journals = array('Bot. Gaz.');
+$journals = array('Fungal Biology');
 
+$journals = array('Cryptog. Mycol.');
 
+$journal = '';
 
 foreach ($journals as $journal)
 {
 	$sql = 'select * from names_indexfungorum where title = "' . $journal .'" and doi is NULL';	
-	 //$sql .= ' AND year > 2013';
+	$sql .= ' AND year > 2000';
 	//$sql .= ' AND id < 100000';
 	//$sql .= ' AND volume IN (34,35,36,37)';
 	//$sql .= ' AND volume = 64';
@@ -370,7 +372,11 @@ foreach ($journals as $journal)
 	
 	//$sql = 'select * from names_indexfungorum where id=131467';
 	
+	
+	// $sql = 'SELECT * from names_indexfungorum where year=2016 AND doi IS NULL';
+	
 	//echo $sql . "\n";
+	
 
 
 	$result = $db->Execute($sql);
@@ -388,6 +394,7 @@ foreach ($journals as $journal)
 		$reference->journal->pages = $result->fields['pages'];
 		
 		$reference->journal->pages = preg_replace('/^(\d+)(.*)$/', '$1', $reference->journal->pages);
+		
 		
 		if ($journal == 'Nordic Jl Bot.')
 		{
