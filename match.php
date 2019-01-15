@@ -90,7 +90,7 @@ function roman($arabic)
 }
 
 //--------------------------------------------------------------------------------------------------
-$db = NewADOConnection('mysql');
+$db = NewADOConnection('mysqli');
 $db->Connect("localhost", 
 	'root', '', 'ipni');
 

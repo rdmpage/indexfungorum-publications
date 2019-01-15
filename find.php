@@ -93,7 +93,7 @@ function roman($arabic)
 
 
 //--------------------------------------------------------------------------------------------------
-$db = NewADOConnection('mysql');
+$db = NewADOConnection('mysqli');
 $db->Connect("localhost", 
 	'root', '', 'ipni');
 
@@ -357,12 +357,14 @@ $journals = array('Fungal Biology');
 
 $journals = array('Cryptog. Mycol.');
 
+$journals = array('Palynology');
+
 $journal = '';
 
 foreach ($journals as $journal)
 {
 	$sql = 'select * from names_indexfungorum where title = "' . $journal .'" and doi is NULL';	
-	$sql .= ' AND year > 2000';
+	//$sql .= ' AND year > 2000';
 	//$sql .= ' AND id < 100000';
 	//$sql .= ' AND volume IN (34,35,36,37)';
 	//$sql .= ' AND volume = 64';

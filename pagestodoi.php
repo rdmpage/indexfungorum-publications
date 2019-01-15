@@ -10,7 +10,7 @@ require_once (dirname(__FILE__) . '/lib.php');
 
 
 //--------------------------------------------------------------------------------------------------
-$db = NewADOConnection('mysql');
+$db = NewADOConnection('mysqli');
 $db->Connect("localhost", 
 	'root', '', 'ipni');
 

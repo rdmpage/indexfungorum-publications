@@ -7,7 +7,7 @@ require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');
 
 
 //--------------------------------------------------------------------------------------------------
-$db = NewADOConnection('mysql');
+$db = NewADOConnection('mysqli');
 $db->Connect("localhost", 
 	$config['db_user'] , $config['db_passwd'] , $config['db_name']);
 
@@ -88,7 +88,8 @@ function display_search($query, $type = 'genus')
 	
 	$found = false;
 	
-	$query = trim(mysql_escape_string($query));
+	//$query = trim(mysql_escape_string($query));
+	$query = trim($query);
 	
 	if (preg_match('/^\w+/', $query))
 	{
