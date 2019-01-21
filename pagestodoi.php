@@ -27,6 +27,11 @@ foreach ($journals as $journal)
 {
 	$sql = 'SELECT * FROM names_indexfungorum WHERE  title = "' . $journal .'" AND pages LIKE "10.%" AND doi IS NULL';
 	//$sql = 'SELECT * FROM names_indexfungorum WHERE  title = "' . $journal .'"  AND doi IS NULL';
+	
+	$sql .= ' AND DATE_SUB(CURDATE(),INTERVAL 1 DAY) <= updated;';
+
+
+	$sql = 'SELECT * FROM names_indexfungorum WHERE year="2018" and doi is null';
 
 
 	$result = $db->Execute($sql);
